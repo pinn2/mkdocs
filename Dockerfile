@@ -8,6 +8,6 @@ EXPOSE 8000
 WORKDIR /root
 
 COPY mkdockerize.sh /root/bin/mkdockerize.sh
-RUN chmod u+x /root/bin/mkdockerize.sh
+RUN chmod +x /root/bin/mkdockerize.sh
 
 ENTRYPOINT ["/root/bin/mkdockerize.sh"]
